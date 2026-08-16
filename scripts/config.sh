@@ -1,0 +1,9 @@
+ROOT_DIR="../root-ca"
+
+INTERMEDIATE_DIR="../intermediate-ca"
+
+DAYS_ROOT=3650
+
+DAYS_INTERMEDIATE=1825
+
+RSA_BITS=4096

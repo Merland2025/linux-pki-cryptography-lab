@@ -1,0 +1,18 @@
+# Private keys — NEVER commit
+private/
+*.key
+*.pem
+
+# PKI sensitive/state files
+*.srl
+*.old
+index.txt
+index.txt.attr
+serial
+crlnumber
+
+# Temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
