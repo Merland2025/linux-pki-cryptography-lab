@@ -1,9 +1,23 @@
-# Private keys — NEVER commit
-private/
-*.key
-*.pem
+# ============================================================
+# Private keys and secrets — NEVER commit
+# ============================================================
 
-# PKI sensitive/state files
+*.key
+*.p12
+*.pfx
+*.jks
+
+private/
+secrets/
+
+# Private PEM files
+# Do not commit PEM files unless they have been reviewed.
+# *.pem
+
+# ============================================================
+# PKI private/state files
+# ============================================================
+
 *.srl
 *.old
 index.txt
@@ -11,8 +25,18 @@ index.txt.attr
 serial
 crlnumber
 
+# ============================================================
 # Temporary files
+# ============================================================
+
 *.log
 *.tmp
 *.swp
 .DS_Store
+
+# ============================================================
+# Local / lab artifacts
+# ============================================================
+
+*.sqlite
+*.db
