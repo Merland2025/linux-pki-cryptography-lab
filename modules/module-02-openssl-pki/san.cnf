@@ -1,0 +1,6 @@
+subjectAltName=DNS:web.example.com
+basicConstraints=critical,CA:false
+keyUsage=critical,digitalSignature,keyEncipherment
+extendedKeyUsage=serverAuth
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid,issuer
