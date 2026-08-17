@@ -40,3 +40,4 @@ crlnumber
 
 *.sqlite
 *.db
+pki-clients/
