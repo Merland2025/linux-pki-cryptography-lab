@@ -1,0 +1,41 @@
+[ ca ]
+default_ca = CA_default
+
+[ CA_default ]
+
+dir               = /home/merland/pki-automation/modules/module-04-crl-ocsp-tls/tls/intermediate-ca
+database          = $dir/index.txt
+new_certs_dir     = $dir/newcerts
+
+certificate       = $dir/certs/intermediate-ca.crt
+private_key       = $dir/private/intermediate-ca.key
+
+serial            = $dir/serial
+crlnumber         = $dir/crlnumber
+
+default_md        = sha256
+default_days      = 825
+default_crl_days  = 30
+
+policy            = policy_loose
+
+x509_extensions   = server_cert
+
+[ policy_loose ]
+
+countryName             = optional
+stateOrProvinceName     = optional
+localityName            = optional
+organizationName        = optional
+organizationalUnitName  = optional
+commonName              = supplied
+emailAddress            = optional
+
+[ server_cert ]
+
+basicConstraints        = critical,CA:FALSE
+keyUsage                = critical,digitalSignature,keyEncipherment
+extendedKeyUsage        = serverAuth
+subjectAltName          = DNS:web.example.com
+subjectKeyIdentifier    = hash
+authorityKeyIdentifier  = keyid,issuer

@@ -46,8 +46,8 @@ pki-clients/
 # Module 03 — generated crypto validation artifacts
 # ============================================================
 
-modules/module-03-crl-ocsp-tls/crypto-validation/*.key
-modules/module-03-crl-ocsp-tls/crypto-validation/*.sig
-modules/module-03-crl-ocsp-tls/crypto-validation/message.txt
-modules/module-03-crl-ocsp-tls/crypto-validation/validation.log
-modules/module-03-crl-ocsp-tls/crypto-validation/pki/
+modules/module-03-crypto-validation/crypto-validation/*.key
+modules/module-03-crypto-validation/crypto-validation/*.sig
+modules/module-03-crypto-validation/crypto-validation/message.txt
+modules/module-03-crypto-validation/crypto-validation/validation.log
+modules/module-03-crypto-validation/crypto-validation/pki/

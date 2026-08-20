@@ -1,0 +1,5 @@
+basicConstraints=critical,CA:FALSE
+keyUsage=critical,digitalSignature
+extendedKeyUsage=critical,OCSPSigning
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid,issuer
